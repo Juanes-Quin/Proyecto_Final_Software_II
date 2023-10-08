@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useTaxiFormContext } from './TaxiFormContext';
 import '../estilos/TaxiForm.css'; // Ajusta la ruta según la ubicación de tu archivo CSS
-import Login from './Login'; // Importa el nuevo componente Login
+/* import Login from './Login'; */ // Importa el nuevo componente Login
 
 
 // Definimos el componente TaxiForm
@@ -78,15 +78,15 @@ const TaxiForm = () => {
         </div>
 
             {/* Login sin UTILIZAR */}
-          {isLoginVisible && <Login />}
+          {/* {isLoginVisible && <Login />} */}
 
           {/* También mostramos los datos del carro */}
-          <div className="confirmation-message">
+          {/* <div className="confirmation-message">
             <p>Datos del Carro:</p>
             <p>Marca: {carInfo.vehicleMake}</p>
             <p>Modelo: {carInfo.vehicleModel}</p>
             <p>Año: {carInfo.vehicleYear}</p>
-          </div>
+          </div> */}
 
         </>
       ) : (
