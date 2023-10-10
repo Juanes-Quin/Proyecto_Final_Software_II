@@ -1,3 +1,24 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import DriverList from './components/DriverList';
+import DriverProfile from './components/DriverProfile';
+
+const drivers = [
+  {
+    id: 1,
+    name: 'Juan Pérez',
+    photo: 'url_de_la_foto.jpg',
+    rating: 4.5,
+    // Agrega más detalles del perfil aquí
+  },
+  // Agrega más conductores aquí
+];
+=======
+>>>>>>> c4c81178445c8cd283a99de89f933d214ebaacd8
 import React, {  useState } from 'react'
 
 
@@ -43,8 +64,27 @@ const App = () => {
     setFormVisible(false);
     /* setLoginVisible(false); */
   };
+<<<<<<< HEAD
 
   return (
+=======
+>>>>>>> adriana
+
+  return (
+<<<<<<< HEAD
+    <Router>
+      <div>
+        <Switch>
+          {/* Ruta para mostrar la lista de conductores */}
+          <Route exact path="/" render={(props) => <DriverList drivers={drivers} {...props} />} />
+
+          {/* Ruta para mostrar el perfil del conductor */}
+          <Route path="/perfil-conductor/:id" render={(props) => <DriverProfile drivers={drivers} {...props} />} />
+        </Switch>
+      </div>
+    </Router>
+=======
+>>>>>>> c4c81178445c8cd283a99de89f933d214ebaacd8
     <TaxiFormProvider>
       <div className="App">
         {/* Barra de navegación */}
@@ -69,6 +109,10 @@ const App = () => {
      {/*    {isLoginVisible && <Login />} */}
      </div>
     </TaxiFormProvider>
+<<<<<<< HEAD
+=======
+>>>>>>> adriana
+>>>>>>> c4c81178445c8cd283a99de89f933d214ebaacd8
   );
 };
 
