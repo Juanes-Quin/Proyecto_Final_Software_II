@@ -1,11 +1,15 @@
-<<<<<<< HEAD
+/* <<<<<<< HEAD
 =======
-<<<<<<< HEAD
+<<<<<<< HEAD */
 import './App.css';
-import React from 'react';
+import React, {  useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import DriverList from './components/DriverList';
 import DriverProfile from './components/DriverProfile';
+
+
+import { TaxiForm } from './components/TaxiForm';
+import { TaxiFormProvider } from './components/TaxiFormContext';
 
 const drivers = [
   {
@@ -17,17 +21,14 @@ const drivers = [
   },
   // Agrega más conductores aquí
 ];
-=======
->>>>>>> c4c81178445c8cd283a99de89f933d214ebaacd8
-import React, {  useState } from 'react'
 
 
-/* import { RegistroForm} from './Componentes/RegistroForm'; */
+
+
+
 /* import Login from './Componentes/Login'; */
 
-import './App.css';
-import { TaxiForm } from './components/TaxiForm';
-import { TaxiFormProvider } from './components/TaxiFormContext';
+
 
 
 
@@ -64,14 +65,16 @@ const App = () => {
     setFormVisible(false);
     /* setLoginVisible(false); */
   };
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
+
+ /*  return ( */
+/* =======
+>>>>>>> adriana */
 
   return (
-=======
->>>>>>> adriana
-
+/* <<<<<<< HEAD */
+function App() {
   return (
-<<<<<<< HEAD
     <Router>
       <div>
         <Switch>
@@ -83,8 +86,9 @@ const App = () => {
         </Switch>
       </div>
     </Router>
-=======
->>>>>>> c4c81178445c8cd283a99de89f933d214ebaacd8
+  );
+}
+
     <TaxiFormProvider>
       <div className="App">
         {/* Barra de navegación */}
@@ -104,15 +108,11 @@ const App = () => {
        </div>
         </nav>
 
-        {/* Contenido de la aplicacion */}
-        {isFormVisible && <TaxiForm />}
+          {/* Contenido de la aplicacion */}
+          {isFormVisible && <TaxiForm />}
      {/*    {isLoginVisible && <Login />} */}
      </div>
     </TaxiFormProvider>
-<<<<<<< HEAD
-=======
->>>>>>> adriana
->>>>>>> c4c81178445c8cd283a99de89f933d214ebaacd8
   );
 };
 
